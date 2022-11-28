@@ -42,17 +42,21 @@ p {
     width: 100%;
     height: 52rem;
     margin-bottom: 2.4rem;
+    overflow: hidden;
+    img{
+      transition: transform 0.3s ease;
+    }
     button {
       position: absolute;
-      bottom: 5.7rem;
+      bottom: 0;
       padding: 1.8rem 3.6rem;
       background-color: #3265ea;
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2rem;
       opacity: 0;
+      transition: all 0.3s ease;
     }
-
   }
   .info {
     h3 {
@@ -66,11 +70,16 @@ p {
       line-height: 1.5rem;
     }
   }
-   &:hover {
-      .image {
-        button {
-          opacity: 1;
-        }
+  &:hover {
+    .image {
+      img{
+        transform: scale(1.1);
+      }
+      button {
+        bottom: 5.7rem;
+        opacity: 1;
+
       }
     }
+  }
 }
