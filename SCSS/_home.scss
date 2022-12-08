@@ -111,12 +111,30 @@
   }
   @media(max-width: 991px){
     padding: 6rem 0;
+    background-size: cover;
     .container{
       flex-direction: column;
       align-items: center;
     }
     .left{
       text-align: center;
+      margin-bottom: 4rem;
+      .value{
+        justify-content: center;
+      }
+    }
+    .direita{
+      text-align: center;
+      button{
+        margin-bottom: 3rem;
+      }
+      .year-old{
+        flex-direction: column;
+        p{
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }
