@@ -109,31 +109,63 @@
       }
     }
   }
-  @media(max-width: 991px){
+  @media (max-width: 991px) {
     padding: 6rem 0;
     background-size: cover;
-    .container{
+    .container {
       flex-direction: column;
       align-items: center;
     }
-    .left{
+    .left {
       text-align: center;
       margin-bottom: 4rem;
-      .value{
+      .value {
         justify-content: center;
       }
     }
-    .direita{
+    .direita {
       text-align: center;
-      button{
+      button {
         margin-bottom: 3rem;
       }
-      .year-old{
+      .year-old {
         flex-direction: column;
-        p{
+        p {
           margin-left: 0;
           margin-top: 2rem;
         }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+
+    .left {
+      h1 {
+        font-size: 6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      p{
+        font-size: 1.4rem;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+      .value{
+        flex-direction: column;
+      }
+    }
+    .direita{
+      max-width: 31rem;
+      button{
+        height: 17.7rem;
+      }
+      .year-old{
+        p{
+           line-height: 2.4rem;
+        }
+
       }
     }
   }
