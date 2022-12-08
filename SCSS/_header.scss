@@ -21,13 +21,28 @@ header {
       display: flex;
       gap: 0.8rem;
       margin-left: 1.8rem;
-      li{
+      li {
         padding: 0.4rem 0.8rem;
         border: 0.15rem solid #ffffff;
         font-size: 1.4rem;
         line-height: 1.5rem;
-
       }
+    }
+  }
+  @media (max-width: 560px) {
+    height: 7rem;
+    .sony{
+      display: none;
+    }
+    .logo{
+      max-width: 14rem;
+    }
+
+    .plataform{
+      span {
+        display: none;
+      }
+
     }
   }
 }
